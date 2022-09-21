@@ -1,0 +1,95 @@
+body
+{
+    background-position-x: center;
+ background-image:url(images/2778089-scaled-1.jpg);
+height: 250px ;
+width: 200px ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+  
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    padding-top: 2%;
+}
+p1{
+    text-align: center;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    padding-top: 0%;
+}
+button{
+    color: aliceblue;
+    background-color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    padding: 0.75em;
+}
+
+#yesBtn{
+    
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+.corazon 
+{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    transform: rotate(45deg);
+    margin: 200px auto;
+    position: relative;
+    border-radius: 5px;
+    animation: palpitar 2s linear infinite alternate;
+    will-change: transform;
+}
+.corazon::before, .corazon::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: brown;
+    border-radius: 50%;
+}
+.corazon:before
+{
+    top: 0;
+    left: -50%;
+}
+.corazon::after
+{
+    top: -50%;
+}
+@keyframes palpitar{
+    0%
+    {
+        transform: rotate(45deg) scale(1);
+    }
+    50%{
+         transform: rotate(45deg) scale(1.5);
+    }
+    100%
+    {
+        transform: rotate(45deg) scale(1);
+    }
+}
